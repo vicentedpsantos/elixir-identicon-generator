@@ -1,3 +1,3 @@
-cd into the program folder
-run iex -S mix
-Identicon.main("your-name")
+- ``cd`` into the program folder
+- run ``iex -S mix``
+- run ``Identicon.main("your-name")``
