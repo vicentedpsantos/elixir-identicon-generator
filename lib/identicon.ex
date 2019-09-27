@@ -24,10 +24,10 @@ defmodule Identicon do
   def build_grid(%Identicon.Image{hex: hex} = image) do
     grid =
       hex
-        |> Enum.chunk(3)
-        |> Enum.map(fn [a, b | _tail] = row -> row ++ [b, a] end)
-        |> List.flatten
-        |> Enum.with_index
+      |> Enum.chunk(3)
+      |> Enum.map(fn [a, b | _tail] = row -> row ++ [b, a] end)
+      |> List.flatten
+      |> Enum.with_index
 
     %Identicon.Image{image | grid: grid}
   end
